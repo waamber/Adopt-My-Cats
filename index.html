@@ -4,12 +4,21 @@
   <title>Adopt My Cats</title>
 
   <link rel="stylesheet" type="text/css" href="./lib/node_modules/bootstrap/dist/css/bootstrap.css">
-  <link href="css/style.css" rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
   <h1>Adopt My Cats!</h1>
-
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="input-group">
+        <input type="text" class="form-control" id="inputText" placeholder="Search for...">
+        <span class="input-group-btn">
+        <button class="btn btn-secondary" id ="goBtn" type="button">Go!</button>
+      </span>
+      </div>
+    </div>
+  </div>
 
 
   <div id="cat-container"></div>
