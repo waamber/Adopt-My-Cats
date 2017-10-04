@@ -1,23 +1,32 @@
 'use strict';
 const cats = require('./cats');
 const dom = require('./dom');
-//create hide input
-
 
 $('#inputText').keypress((e) => {
   if (e.key === 'Enter') {
     let catInput = $('#inputText').val();
     cats.getCats(catInput);
+    hideInput();
   }
-
 });
 
 $('#goBtn').click(() => {
   let catInput = $('#inputText').val();
   cats.getCats(catInput);
+  hideInput();
 });
 
-module.exports = {};
+$('#disableBtn').click(() => {
+  $('.disabled-kitty').parent().parent().addClass('hidden');
+
+});
+
+const hideInput = () => {
+  $('#inputText, #goBtn').addClass('hidden');
+  $('#disableBtn').removeClass('hidden');
+};
+
+module.exports = { hideInput };
 
 
 

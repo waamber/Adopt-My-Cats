@@ -1,0 +1,59 @@
+body {
+  background-image: url('https://i.imgur.com/70zwvaw.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 55px;
+  font-family: 'Rye', cursive;
+}
+
+.delete {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#cat-container {
+  margin: 25px auto;
+  padding: 25px;
+}
+
+.cat-card {
+  color: white;
+  margin-right: 20px;
+  margin-left: 27px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid lightgrey;
+  border-radius: 15px;
+  box-shadow: 2px 2px grey;
+  width: 300px;
+  height: 350px;
+}
+
+img {
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+  margin-left: 15%;
+  height: 150px;
+  width: 200px;
+}
+
+.name {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Rye', cursive;
+  text-shadow: 2px 2px black;
+}
+
+.description-container{
+  font-size: 15px;
+  text-shadow: 2px 2px black;
+}
+
+.hidden {
+  display: none;
+}
